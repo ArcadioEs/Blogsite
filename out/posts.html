@@ -1,0 +1,261 @@
+<html>
+  <head>
+      <title>Posts</title>
+      <meta name="generator" content="DocPad v6.78.4" />
+      <style >html.wait {
+    cursor: wait !important;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/styles/style.css" />
+      <script >(function(){
+    /<em> Did we just livereload? </em>/
+var log = !!(localStorage &amp;&amp; console &amp;&amp; console.log &amp;&amp; true);
+if ( log &amp;&amp; localStorage.getItem(&#39;/docpad-livereload/reloaded&#39;) === &#39;yes&#39; ) {
+    localStorage.removeItem(&#39;/docpad-livereload/reloaded&#39;);
+    console.log(&#39;LiveReload completed at&#39;, new Date())
+}
+
+/<em> Listen for the regenerated event and perform a reload of the page when the event occurs </em>/
+var listen = function(){
+    var primus = new Primus(&#39;/docpad-livereload&#39;);
+    primus.on(&#39;data&#39;, function(data){
+        if ( data &amp;&amp; data.message ) {
+            if ( data.message === &#39;generateBefore&#39; ) {
+                if ( log ) {
+                    console.log(&#39;LiveReload started at&#39;, new Date());
+                }
+                if ( typeof document.getElementsByTagName !== &#39;undefined&#39; ) {
+    document.getElementsByTagName(&#39;html&#39;)[0].className += &#39; wait&#39;;
+}
+            }
+            else if ( data.message === &#39;generateAfter&#39; ) {
+                if ( log ) {
+                    localStorage.setItem(&#39;/docpad-livereload/reloaded&#39;, &#39;yes&#39;);
+                }
+                document.location.reload();
+            }
+        }
+    });
+};
+    /<em> Inject socket into our page </em>/
+var inject = function(){
+    var t = document.createElement(&#39;script&#39;);
+    t.type = &#39;text/javascript&#39;;
+    t.async = &#39;async&#39;;
+    t.src = &#39;/docpad-livereload/primus.js&#39;;
+    t.onload = listen;
+    var s = document.getElementsByTagName(&#39;script&#39;)[0];
+    s.parentNode.insertBefore(t, s);
+};
+    if ( typeof Primus !== &#39;undefined&#39; ) {
+        listen();
+    } else {
+        inject();
+    }
+})();</script><script defer="defer"  src="/vendor/jquery.js"></script><script defer="defer"  src="/scripts/script.js"></script>
+
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  </head>
+
+  <body class="container-fluid">
+    <div class="row">
+      <div id="header" class="col-md-12 hidden-xs hidden-sm">
+
+      </div>
+
+      <div class="col-xs-12 hidden-xs hidden-sm">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand">Blog site</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="/index.html">Home</a></li>
+              <li><a href="/posts.html">View all posts</a></li>
+              <li><a href="/about.html">About me</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tags
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li>
+
+                      <a href="/tags/other.html">Tag: other</a></br>
+
+                      <a href="/tags/blog.html">Tag: blog</a></br>
+
+                      <a href="/tags/first.html">Tag: first</a></br>
+
+                      <a href="/tags/hybris.html">Tag: hybris</a></br>
+
+                      <a href="/tags/example.html">Tag: example</a></br>
+
+                      <a href="/tags/task.html">Tag: task</a></br>
+
+                      <a href="/tags/student.html">Tag: student</a></br>
+
+                      <a href="/tags/docpad.html">Tag: docpad</a></br>
+
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="col-xs-12 visible-xs visible-sm">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand">Blog site</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="/index.html">Home</a></li>
+              <li><a href="/posts.html">View all posts</a></li>
+              <li><a href="/about.html">About me</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tags
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li>
+
+                      <a href="/tags/other.html">Tag: other</a></br>
+
+                      <a href="/tags/blog.html">Tag: blog</a></br>
+
+                      <a href="/tags/first.html">Tag: first</a></br>
+
+                      <a href="/tags/hybris.html">Tag: hybris</a></br>
+
+                      <a href="/tags/example.html">Tag: example</a></br>
+
+                      <a href="/tags/task.html">Tag: task</a></br>
+
+                      <a href="/tags/student.html">Tag: student</a></br>
+
+                      <a href="/tags/docpad.html">Tag: docpad</a></br>
+
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div id="center" class="col-xs-12 col-md-8 col-md-push-2">
+
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h1><a href="/postsOut/post4out.html">
+        Fifth post made
+      </a></h1>
+      <p class="datePos">
+        2016-03-09 16:48, author: Kamil
+      </p>
+    </div>
+    <div class="panel-body justify">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-10 col-md-push-1 col-xs-12 postOnWall">
+            <strong>On the other hand</strong>, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.</br>
+            <div class="tagsPos">Tags: <b>docpad, example, hybris</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h1><a href="/postsOut/post3out.html">
+        Fourth post made
+      </a></h1>
+      <p class="datePos">
+        2016-03-09 16:35, author: Arek
+      </p>
+    </div>
+    <div class="panel-body justify">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-10 col-md-push-1 col-xs-12 postOnWall">
+            <strong>At vero eos et accusamus et iusto odio</strong> dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</br>
+            <div class="tagsPos">Tags: <b>example, task, student</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h1><a href="/postsOut/post2out.html">
+        Third post made
+      </a></h1>
+      <p class="datePos">
+        2016-03-09 16:32, author: Arek
+      </p>
+    </div>
+    <div class="panel-body justify">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-10 col-md-push-1 col-xs-12 postOnWall">
+            <strong>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</strong>, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure</br>
+            <div class="tagsPos">Tags: <b>other, blog</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h1><a href="/postsOut/post1out.html">
+        Second post made
+      </a></h1>
+      <p class="datePos">
+        2016-03-09 16:20, author: Maciek
+      </p>
+    </div>
+    <div class="panel-body justify">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-10 col-md-push-1 col-xs-12 postOnWall">
+            <strong>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</strong>, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</br>
+            <div class="tagsPos">Tags: <b>hybris, other, student</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h1><a href="/postsOut/post0out.html">
+        First post made
+      </a></h1>
+      <p class="datePos">
+        2016-03-09 15:37, author: Arek
+      </p>
+    </div>
+    <div class="panel-body justify">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-10 col-md-push-1 col-xs-12 postOnWall">
+            <strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</br>
+            <div class="tagsPos">Tags: <b>first, blog, hybris</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      </div>
+    </div>
+  </body>
+</html>

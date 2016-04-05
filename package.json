@@ -1,0 +1,23 @@
+{
+  "name": "no-skeleton.docpad",
+  "version": "0.1.0",
+  "description": "New DocPad project without using a skeleton",
+  "engines": {
+    "node": "5.10.0",
+    "npm": "3.7.3"
+  },
+  "dependencies": {
+    "docpad": "~6.78.4",
+    "docpad-plugin-eco": "~2.1.0",
+    "docpad-plugin-ghpages": "~2.4.4",
+    "docpad-plugin-livereload": "~2.7.1",
+    "docpad-plugin-marked": "~2.3.0",
+    "docpad-plugin-tags": "~2.0.7"
+  },
+  "main": "node_modules/.bin/docpad-server",
+  "scripts": {
+    "start": "node_modules/.bin/docpad-server",
+    "test": "node_modules/.bin/docpad generate --debug --silent",
+    "info": "node_modules/.bin/docpad info --silent"
+  }
+}
