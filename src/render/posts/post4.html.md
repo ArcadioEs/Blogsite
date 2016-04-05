@@ -3,7 +3,7 @@ title: "Fifth post made"
 isPost: true
 author: "Kamil"
 timestamp: 2016-03-09 16:48
-link: "/postsOut/post4out.html"
+link: "/arcadio/postsOut/post4out.html"
 keywords: "docpad, example, hybris"
 tags:
   - docpad

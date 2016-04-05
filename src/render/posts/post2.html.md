@@ -3,7 +3,7 @@ title: "Third post made"
 isPost: true
 author: "Arek"
 timestamp: 2016-03-09 16:32
-link: "/postsOut/post2out.html"
+link: "/arcadio/postsOut/post2out.html"
 keywords: "other, blog"
 tags:
   - other

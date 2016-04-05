@@ -3,7 +3,7 @@ title: "Second post made"
 isPost: true
 author: "Maciek"
 timestamp: 2016-03-09 16:20
-link: "/postsOut/post1out.html"
+link: "/arcadio/postsOut/post1out.html"
 keywords: "hybris, other, student"
 tags:
   - hybris

@@ -3,7 +3,7 @@ title: "First post made"
 isPost: true
 author: "Arek"
 timestamp: 2016-03-09 15:37
-link: "/postsOut/post0out.html"
+link: "/arcadio/postsOut/post0out.html"
 keywords: "first, blog, hybris"
 tags:
   - first

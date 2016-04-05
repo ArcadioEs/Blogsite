@@ -3,7 +3,7 @@ title: "Fourth post made"
 isPost: true
 author: "Arek"
 timestamp: 2016-03-09 16:35
-link: "/postsOut/post3out.html"
+link: "/arcadio/postsOut/post3out.html"
 keywords: "example, task, student"
 tags:
   - example
